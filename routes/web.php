@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ClienteController@index');
 
 Route::get('admin', function(){
 	return view('dashboard');
 });
+
+Route::resource('clientes', 'ClienteController');
+
+
+Route::put('/asd','ClienteController@show');
+//Route::resource('equipos', 'EquipoController');

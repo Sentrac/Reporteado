@@ -49,7 +49,7 @@ return [
             'password' => env('DB_PASSWORD', 'kripton32'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
-            'collation' => 'utf_unicode_ci',
+            'collation' => 'utf8_unicode_ci',
             'prefix' => '',
             'prefix_indexes' => true,
             'strict' => true,
